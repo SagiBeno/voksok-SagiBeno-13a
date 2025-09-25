@@ -26,7 +26,7 @@ public class Election {
         Scanner scanner = new Scanner(file);
 
         while (scanner.hasNextLine()) {
-            String sor = scanner.nextLine().trim();
+            String sor = scanner.nextLine();
             szavazatok.add(sor);
         }
 

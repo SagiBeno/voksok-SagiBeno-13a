@@ -7,6 +7,9 @@ import java.util.Scanner;
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
 
+    public static boolean isRunningTest = false;
+    public static String testSzervezet;
+
     private static void debugger() {
         int i = 0;
     }
@@ -25,12 +28,10 @@ public class Main {
         // 4. feladat
         Scanner scanner = new Scanner(System.in);
         System.out.print("4. feladat: Kérek egy induló szervezetet: ");
-        String szervezet = scanner.nextLine();
+        String szervezet = isRunningTest ? testSzervezet : scanner.nextLine();
         System.out.println(szervezet.toUpperCase() + " " + Election.szamlalo(szervezet) + " szavazatot kapott.");
 
         // 5. feladat
         System.out.println("5. feladat" + Election.szazalek());
-
-        debugger();
     }
 }

@@ -29,6 +29,7 @@ public class Main {
         System.out.println(szervezet.toUpperCase() + " " + Election.szamlalo(szervezet) + " szavazatot kapott.");
 
         // 5. feladat
+        System.out.println("5. feladat" + Election.szazalek());
 
         debugger();
     }

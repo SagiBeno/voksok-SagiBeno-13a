@@ -16,20 +16,20 @@ public class Main {
 
     public static void main(String[] args) throws FileNotFoundException {
         // 1. feladat
-        System.out.println("1. feladat: Voksok");
+        System.out.println("1. feladat: Voksok\n");
 
         // 2. feladat
         Election.readfile("ForrasFileok/voksok.txt");
-        System.out.println("2. feladat: adatok tárolva");
+        System.out.println("2. feladat: adatok tárolva\n");
 
         // 3. feladat
-        System.out.println("3. feladat: " + Election.getSzavazatok().size() + " polgár szavazott.");
+        System.out.println("3. feladat: " + Election.getSzavazatok().size() + " polgár szavazott.\n");
 
         // 4. feladat
         Scanner scanner = new Scanner(System.in);
         System.out.print("4. feladat: Kérek egy induló szervezetet: ");
         String szervezet = isRunningTest ? testSzervezet : scanner.nextLine();
-        System.out.println(szervezet.toUpperCase() + " " + Election.szamlalo(szervezet) + " szavazatot kapott.");
+        System.out.println(szervezet.toUpperCase() + " " + Election.szamlalo(szervezet) + " szavazatot kapott.\n");
 
         // 5. feladat
         System.out.println("5. feladat" + Election.szazalek());

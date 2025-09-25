@@ -36,4 +36,15 @@ public class Election {
             return "az adatokat nem sikerült beolvasni";
         }
     }
+
+    public static int szamlalo(String szervezet) {
+        int szavazatokSzama = 0;
+
+        for (String szervezetek : getSzavazatok()) {
+            if (szervezetek.equalsIgnoreCase(szervezet)) {
+                szavazatokSzama++;
+            }
+        }
+        return szavazatokSzama;
+    }
 }

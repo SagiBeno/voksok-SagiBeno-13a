@@ -17,6 +17,9 @@ public class Main {
         // 2. feladat
         Election.readfile("ForrasFileok/voksok.txt");
         System.out.println("2. feladat: adatok tárolva");
+
+        // 3. feladat
+        System.out.println("3. feladat: " + Election.getSzavazatok().size() + " polgár szavazott.");
         debugger();
     }
 }
